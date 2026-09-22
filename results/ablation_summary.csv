@@ -1,0 +1,5 @@
+﻿model_id,model_name,input_features,feature_dim,accuracy,macro_f1,fnr,fpr
+M0,PhoBERT-only (Baseline),PhoBERT [CLS] embedding,768,0.98,0.9799,0.0,0.0364
+M1,Hybrid đầy đủ (PhoBERT + 11 Đặc trưng),PhoBERT [CLS] (768) + Structured features (11),779,0.96,0.9597,0.0333,0.0455
+M2,Hybrid loại bỏ cột SMS (PhoBERT + 9 Đặc trưng),PhoBERT [CLS] (768) + Structured features bỏ uppercase/exclamation (9),777,0.92,0.9188,0.1111,0.0545
+M3,Chỉ đặc trưng cấu trúc (Logistic Regression mốc tham chiếu),11 Structured features chuẩn hoá (không dùng PhoBERT),11,0.965,0.9644,0.0778,0.0
