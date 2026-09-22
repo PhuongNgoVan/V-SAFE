@@ -18,4 +18,10 @@ logs/
 
 # Kaggle / Token cá nhân (Tuyệt đối không đẩy)
 *.json
-!configs/teencode_dict.json
+!configs/teencode_dict.json# Agent plans 
+AGENT_SYSTEM_PROMPT.md 
+MASTER_PROJECT_PLAN.md 
+PLAN_MEMBER_*.md 
+00_SHARED_CONTRACT.md 
+A*.md 
+B*.md 
