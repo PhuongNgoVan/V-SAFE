@@ -1,0 +1,98 @@
+# configs/scam_keywords.yaml
+# Từ điển từ khoá phát hiện lừa đảo — 4 nhóm theo kế hoạch mục 3.2
+# Chỉnh sửa file này để thêm/bỏ từ khoá; KHÔNG hard-code trong .py
+
+urgency:
+  - gấp
+  - khẩn cấp
+  - ngay lập tức
+  - ngay bây giờ
+  - hạn chót
+  - hết hạn
+  - sắp hết
+  - trong hôm nay
+  - trước 12 giờ
+  - trước 24 giờ
+  - ngay hôm nay
+  - lập tức
+  - ngay
+  - ngay ngày
+  - không được chậm trễ
+  - nhanh lên
+  - khẩn
+  - cấp bách
+
+authority:
+  - công an
+  - cảnh sát
+  - bộ công an
+  - viện kiểm sát
+  - tòa án
+  - toa an
+  - ngân hàng nhà nước
+  - bộ tài chính
+  - thuế
+  - cục thuế
+  - cơ quan điều tra
+  - cán bộ
+  - cơ quan chức năng
+  - thanh tra
+  - ủy ban nhân dân
+  - ubnd
+  - chính phủ
+  - bộ trưởng
+  - thứ trưởng
+  - nhân viên ngân hàng
+  - đại diện ngân hàng
+  - nhân viên điều tra
+
+financial_action:
+  - chuyển khoản
+  - chuyển tiền
+  - nộp tiền
+  - đặt cọc
+  - tạm ứng
+  - phí bảo lãnh
+  - phí xử lý
+  - phí hành chính
+  - phí bảo hiểm
+  - phí thu hồi
+  - thanh toán ngay
+  - xác nhận giao dịch
+  - otp
+  - mã otp
+  - mã xác thực
+  - số tài khoản
+  - tài khoản ngân hàng
+  - atm
+  - thẻ ngân hàng
+  - số thẻ
+  - cvv
+  - mã pin
+  - internet banking
+  - nạp tiền
+  - bảo lãnh
+  - đóng phí
+
+reward:
+  - trúng thưởng
+  - trúng giải
+  - giải thưởng
+  - nhận thưởng
+  - quà tặng
+  - khuyến mãi
+  - miễn phí
+  - hoàn tiền
+  - cashback
+  - ưu đãi đặc biệt
+  - ưu đãi
+  - may mắn
+  - bốc thăm
+  - chương trình thưởng
+  - phần thưởng
+  - tiền thưởng
+  - iphone
+  - xe máy
+  - du lịch miễn phí
+  - voucher
+  - điểm thưởng

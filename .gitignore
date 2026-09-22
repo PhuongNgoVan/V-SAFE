@@ -22,6 +22,6 @@ logs/
 AGENT_SYSTEM_PROMPT.md 
 MASTER_PROJECT_PLAN.md 
 PLAN_MEMBER_*.md 
-00_SHARED_CONTRACT.md 
-A*.md 
-B*.md 
+# 00_SHARED_CONTRACT.md 
+# A*.md 
+# B*.md 
