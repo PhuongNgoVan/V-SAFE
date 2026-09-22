@@ -1,0 +1,27 @@
+# configs/asr.yaml
+# Cấu hình ASR PhoWhisper (faster-whisper / CTranslate2)
+# Spec: B1_asr_setup_phowhisper.md §4 + 00_SHARED_CONTRACT.md §2
+#
+# Để đổi sang model nhỏ hơn (tiny / small), chỉ cần thay model_path
+# và chạy lại scripts/convert_phowhisper.sh — không sửa code Python.
+
+# ── Model ────────────────────────────────────────────────────────────────
+model_path: "models/asr/phowhisper-base-ct2"   # đường dẫn tương đối từ REPO_ROOT
+                                                 # (hoặc HuggingFace hub name khi test)
+
+# ── Thiết bị & lượng tử hoá ──────────────────────────────────────────────
+device: "cpu"          # "cpu" | "cuda" | "auto"
+compute_type: "int8"   # "int8" (CPU) | "float16" (GPU) | "float32"
+
+# ── Ngôn ngữ ─────────────────────────────────────────────────────────────
+language: "vi"         # tiếng Việt
+
+# ── VAD (Voice Activity Detection) ───────────────────────────────────────
+vad_filter: true
+min_silence_duration_ms: 500   # im lặng liên tục > 500 ms → cắt segment
+
+# ── Các tham số tuỳ chọn ─────────────────────────────────────────────────
+beam_size: 5
+best_of: 5
+temperature: 0.0       # 0.0 = greedy (nhanh nhất, ít noise nhất)
+condition_on_previous_text: false
