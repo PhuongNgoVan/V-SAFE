@@ -1,0 +1,11 @@
+# configs/risk_thresholds.yaml
+# Ngưỡng risk_level dùng trong process_and_predict()
+# Spec: A3_process_and_predict.md §4
+#
+# Quy tắc phân loại:
+#   confidence_score < low_upper        → "low"
+#   low_upper ≤ score < medium_upper    → "medium"
+#   score ≥ medium_upper                → "high"
+
+low_upper: 0.4
+medium_upper: 0.7
